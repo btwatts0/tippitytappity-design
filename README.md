@@ -20,4 +20,22 @@ classDiagram
         + add_badge(title: string)
         + get_badges() vector~string~
   }
+
+  class AccuracyTest{
+        - phrase: string
+        - accuracy: float
+        + generate_phrase(phrases: vector~string~)
+        + get_phrase() string
+        - calculate_accuracy(typed: string, goal: string)
+        + get_accuracy() string
+  }
+
+  class SpeedTest{
+        - phrase: string
+        - time: float
+        - speed: float
+        + generate_phrase(phrases: vector~string~)
+        - calculate_speed(time: float, words: int)
+        + get_speed() float
+  }
 ```
